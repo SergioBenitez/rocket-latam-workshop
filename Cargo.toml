@@ -1,0 +1,13 @@
+[workspace]
+members = [
+  "0-hello-world",
+  "1-hello-person",
+  "2-segments",
+  "3-data",
+  "4-forms",
+  "5-responders",
+  "6-request-guards",
+  "7-state",
+  "8-databases",
+  "9-cfp",
+]

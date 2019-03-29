@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Task: {{ name }}</title>
+    </head>
+    <body>
+        <h3>{{ name }}</h3>
+        <ul>
+            <li>ID: {{ id }}</li>
+            <li>Severity: {{ severity }}</li>
+        </ul>
+    </body>
+</html>

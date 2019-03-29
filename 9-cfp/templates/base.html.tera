@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/static/css/normalize.css">
+    <link rel="stylesheet" href="/static/css/skeleton.css">
+    <title>Call For Papers</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row" style="margin-top: 50px">
+        <nav>
+          <a class="button" href="/">Home</a>
+          {% if user %}
+          <a class="button" href="/logout">Logout</a>
+          {% else %}
+          <a class="button" href="/login">Login</a>
+          {% endif %}
+          {% if user.is_admin %}
+          <a class="button" href="/admin">Admin</a>
+          {% endif %}
+        </nav>
+      </div>
+      <div style="margin-top: 20px"></div>
+      {% block content %}{% endblock content %}
+    </div>
+  </body>
+</html>

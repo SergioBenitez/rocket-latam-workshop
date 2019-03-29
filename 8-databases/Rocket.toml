@@ -1,0 +1,2 @@
+[global.databases]
+# FIXME: Configure the `tasks.sqlite` database.

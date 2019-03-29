@@ -1,0 +1,5 @@
+{% extends "base" %}
+
+{% block content %}
+  <p>Welcome. Login and actual things can happen.</p>
+{% endblock content %}

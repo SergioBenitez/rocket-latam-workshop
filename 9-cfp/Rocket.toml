@@ -1,0 +1,6 @@
+[global]
+gh_client_id = "73580fc248834ea82ebf"
+gh_client_secret = "8c4bbf935679bce847b52f3b4c3fca1914f1e210"
+
+[global.databases]
+cfp = { url = "cfp.db" }

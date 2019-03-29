@@ -1,0 +1,14 @@
+CREATE TABLE users (
+	id INTEGER PRIMARY KEY NOT NULL,
+	github_id TEXT NOT NULL,
+	email TEXT NOT NULL,
+	name TEXT NOT NULL
+);
+
+CREATE TABLE talks (
+	id INTEGER PRIMARY KEY NOT NULL,
+	presenter INTEGER REFERENCES users (id) NOT NULL,
+	title TEXT NOT NULL,
+	status INTEGER NOT NULL,
+	description TEXT NOT NULL
+);

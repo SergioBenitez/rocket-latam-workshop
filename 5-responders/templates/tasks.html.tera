@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Task List</title>
+    </head>
+    <body>
+        <h3>Tasks</h3>
+        <ul>
+        {% for task in tasks %}
+            <li><b>({{ task.id }}) {{ task.name }} [{{ task.severity }}]</b></li>
+        {% endfor %}
+        </ul>
+    </body>
+</html>
